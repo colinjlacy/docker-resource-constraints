@@ -1,0 +1,9 @@
+FROM python:3.13.0-alpine3.20
+
+LABEL authors="Colin.Lacy"
+
+WORKDIR /app
+
+COPY mem.py mem.py
+
+ENTRYPOINT ["python", "/app/mem.py"]
